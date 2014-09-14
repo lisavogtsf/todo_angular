@@ -33,7 +33,7 @@ TodoApp.controller "TaskCtrl", ["$scope", "$http", ($scope, $http) ->
 
 	$scope.getTasks()
 
-	# CREATE/NEW
+	# CREATE/NEW -- non-functional
 	$scope.addTask = ->
 		console.log("newTask parameters, ", $scope.newTask)
 		# worry about injection? validation?
@@ -53,6 +53,14 @@ TodoApp.controller "TaskCtrl", ["$scope", "$http", ($scope, $http) ->
 	# UPDATE/EDIT
 
 	# DESTROY/DELETE
+	$scope.deleteTask = (task) ->
+		conf = confirm "are you sure?"
+		if conf
+			console.log("after confirm delete task, ", task)
+			$http.delete("/tasks/#{task.id}.json").success (data) ->
+				console.log("task, ", task)
+				console.log(data)
+				$scope.tasks.splice($scope.tasks.indexOf(task), 1)
 
 
 ]

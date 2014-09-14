@@ -1,4 +1,4 @@
-<!-- index.html -->
+
 <div ng-controller="TaskCtrl">
 	<h1>Hyperbolic Todo List</h1>
 
@@ -13,17 +13,17 @@
 	<form ng-submit="addTask()">
 		<input type="text" ng-model="newTask.desc" placeholder="Task" autofocus required>
 		<!-- <input type="date" ng-model="task.due" placeholder="Due date"> -->
-		<%#= f.date_field :task.due  %>
-		<button class="btn">Add new task</button>
+		<!-- <button class="btn">Add new task</button> -->
+		<input type="button" value="Add new task">
 	</form>
 
 	<!-- Show all tasks -->
 	<h2>Todo List</h2>
 	<div ng-repeat="task in tasks">
-		<h3>{{task.desc}} <button>Done!</button></h3>
+		<h3>{{task.desc}} <button ng-click="deleteTask(task)">Done!</button></h3>
 	</div>
 
 	<div>
 	<%= image_tag "hyperbole.jpeg", alt: "Do all the things!" %>
 	</div><!-- div for image -->
-</div><!-- for TaskCtrl, whole page -->
+</div><!-- for TaskCtrl, whole page
