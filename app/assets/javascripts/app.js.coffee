@@ -28,24 +28,25 @@ TodoApp.controller "TaskCtrl", ["$scope", "$http", ($scope, $http) ->
 	$scope.getTasks = ->
 	# make a GET request to /tasks.json
 		$http.get("/tasks.json").success (data) ->
-			console.log("data from http get call, ", data)
+			# console.log("data from http get call, ", data)
 			$scope.tasks = data
 
 	$scope.getTasks()
 
-	# # CREATE/NEW
-	# addTask = ->
-	# 	# worry about injection? validation?
-	# 	# internal api call to rails controller, using json format
-	# 	# rails controller creates new task in database, returns object as success
-	# 	$http.post("/tasks.json", $scope.newTask).success (data) ->
-	# 		# clear out the add task form
-	# 		$scope.newTask ={}
-	# 		# add new task database object to tasks array
-	# 		#console.log(task)
-	# 		$scope.tasks.push(task)
-	# 		#console.log(task)
-	# 		#console.log(tasks)
+	# CREATE/NEW
+	$scope.addTask = ->
+		console.log("newTask parameters, ", $scope.newTask)
+		# worry about injection? validation?
+		# internal api call to rails controller, using json format
+		# rails controller creates new task in database, returns object as success
+		$http.post("/tasks.json", $scope.newTask).success (data) ->
+			# clear out the add task form
+			$scope.newTask ={}
+			# add new task database object to tasks array
+			# console.log(data)
+			$scope.tasks.push(data)
+			#console.log(task)
+			# console.log(tasks)
 
 
 
