@@ -46,3 +46,5 @@ group :doc do
 end
 
 gem 'angular-rails-templates'
+
+gem 'pry-rails', :group => :development

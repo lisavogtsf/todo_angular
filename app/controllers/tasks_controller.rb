@@ -11,7 +11,14 @@ class TasksController < ApplicationController
   end
 
   def create
-    respond_with Task.create(task_params)
+    newTaskDesc = params[:desc]
+    newTaskDue = params[:due]
+    binding.pry
+    @task = Task.new
+    @task.desc = newTaskDesc
+    @task.due = newTaskDue
+    @task.save
+    respond_with @task
   end
 
   def show
