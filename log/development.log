@@ -3099,3 +3099,156 @@ ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticit
   Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
   Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
   Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 17:15:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (628.9ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 777ms (Views: 762.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:10 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 17:15:11 -0700
+  [1m[36mTask Load (1.3ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 17:15:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (197.2ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 301ms (Views: 290.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 17:15:57 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 17:41:39 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (339.2ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 416ms (Views: 414.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+Processing by TasksController#index as JSON
+  [1m[35mTask Load (0.7ms)[0m  SELECT "tasks".* FROM "tasks"
+Completed 200 OK in 27ms (Views: 10.5ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 17:41:40 -0700
+Processing by TasksController#index as JSON
+  [1m[36mTask Load (1.8ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 1.8ms)
