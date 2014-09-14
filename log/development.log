@@ -7067,3 +7067,24 @@ Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 20:59:18 -0700
 Processing by TasksController#index as JSON
   [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks"
 Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tasks.json" for 127.0.0.1 at 2014-09-13 21:00:25 -0700
+Processing by TasksController#create as JSON
+  Parameters: {"desc"=>"go for a walk", "task"=>{"desc"=>"go for a walk"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("created_at", "desc", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-14 04:00:25.767995"], ["desc", "go for a walk"], ["updated_at", "2014-09-14 04:00:25.767995"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 9ms (Views: 1.2ms | ActiveRecord: 3.4ms)
+
+
+Started DELETE "/tasks/12.json" for 127.0.0.1 at 2014-09-13 21:00:32 -0700
+Processing by TasksController#destroy as JSON
+  Parameters: {"id"=>"12"}
+Can't verify CSRF token authenticity
+  [1m[35mTask Load (0.5ms)[0m  SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = $1 LIMIT 1  [["id", 12]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = $1  [["id", 12]]
+  [1m[36m (8.4ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 17ms (ActiveRecord: 9.5ms)

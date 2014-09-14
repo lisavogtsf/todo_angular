@@ -13,7 +13,6 @@ class TasksController < ApplicationController
   def create
     newTaskDesc = params[:desc]
     newTaskDue = params[:due]
-    binding.pry
     @task = Task.new
     @task.desc = newTaskDesc
     @task.due = newTaskDue
