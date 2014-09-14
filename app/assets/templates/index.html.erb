@@ -1,0 +1,29 @@
+<!-- index.html -->
+<div ng-controller="TaskCtrl">
+	<h1>Hyperbolic Todo List</h1>
+
+	<!-- I need to make a lot of this on the back-end -->
+	<!-- on the front end I need a form to enter new tasks -->
+	<!-- I need to display all current tasks -->
+	<!-- I need a button to delete a current task -->
+	<!-- I need something to edit a current task -->
+	<!-- somewhere this will involve a loop throug the tasks that I have, ng-repeat -->
+
+	<!-- Enter new task -->
+	<form action="javascript:void(0);" ng-submit="addTask()">
+		<input type="text" ng-model="newTask.desc" placeholder="Task" autofocus required>
+		<!-- <input type="date" ng-model="task.due" placeholder="Due date"> -->
+		<%#= f.date_field :task.due  %>
+		<button class="btn">Add new task</button>
+	</form>
+
+	<!-- Show all tasks -->
+	<h2>Todo List</h2>
+	<div ng-repeat="task in tasks">
+		<h3>{{task.desc}} <button>Done!</button></h3>
+	</div>
+
+	<div>
+	<%= image_tag "hyperbole.jpeg", alt: "Do all the things!" %>
+	</div><!-- div for image -->
+</div><!-- for TaskCtrl, whole page -->

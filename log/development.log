@@ -1,0 +1,3101 @@
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 09:14:32 -0700
+
+ActiveRecord::NoDatabaseError (FATAL:  database "todo_app_development" does not exist
+Run `$ bin/rake db:create db:migrate` to create your database):
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:898:in `rescue in connect'
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.5) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /Users/lisavogtsf/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /Users/lisavogtsf/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.5) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.5) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/lisavogtsf/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/lisavogtsf/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/lisavogtsf/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 09:15:49 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (579.7ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 655ms (Views: 639.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+
+
+Started GET "/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 09:15:50 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"hyperbole"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 09:16:07 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (125.3ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 176ms (Views: 175.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+
+
+Started GET "/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 09:16:08 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (64.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (122.3ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 168ms (Views: 166.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 09:17:58 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (111.4ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 201ms (Views: 199.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+
+
+Started GET "/assets/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"assets/images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started GET "/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 09:20:20 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (41.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 09:21:41 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (121.1ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 172ms (Views: 170.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 09:21:41 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+
+
+Started GET "/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.1ms)
+
+
+Started GET "/assets/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"assets/images/hyperbole"}
+Completed 500 Internal Server Error in 49ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 09:21:42 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (175.6ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 281ms (Views: 272.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+
+
+Started GET "/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.8ms)
+
+
+Started GET "/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/assets/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 10:06:12 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"assets/images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:06:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:06:20 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (94.3ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 151ms (Views: 149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+
+
+Started GET "/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.1ms)
+
+
+Started GET "/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"hyperbole"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.8ms)
+
+
+Started GET "/assets/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 10:06:29 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"assets/images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (131.1ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 214ms (Views: 212.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:28 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:11:40 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (128.2ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 172ms (Views: 171.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+
+
+Started GET "/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 10:11:41 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (118.6ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 166ms (Views: 164.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:00 -0700
+
+
+Started GET "/images/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 10:12:01 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"images/images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (130.4ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 179ms (Views: 177.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+
+
+Started GET "/images/hyperbole.jpg" for 127.0.0.1 at 2014-09-12 10:12:13 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"images/hyperbole"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (46.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:12:30 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (118.3ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 163ms (Views: 161.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-12 10:12:31 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:12:58 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (116.8ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 213ms (Views: 211.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:58 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:12:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:58 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+
+
+Started GET "/images/hyperbole.jpeg" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"images/hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.9ms)
+
+
+Started GET "/assets/images/hyperbole.jpeg" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"assets/images/hyperbole"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (28.4ms)
+
+
+Started GET "/hyperbole.jpeg" for 127.0.0.1 at 2014-09-12 10:12:59 -0700
+Processing by TasksController#index as JPEG
+  Parameters: {"path"=>"hyperbole"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (127.2ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 219ms (Views: 217.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-12 10:13:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (112.8ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 158ms (Views: 156.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-12 10:15:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:19:36 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (151.5ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 265ms (Views: 250.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-12 10:19:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (106.6ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 150ms (Views: 149.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-12 10:20:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 10:20:30 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (113.4ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 158ms (Views: 157.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-12 10:20:31 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 10:52:25 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (135.9ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 231ms (Views: 213.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 10:52:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (145.5ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 209ms (Views: 198.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 11:15:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 11:28:25 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (414.5ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 498ms (Views: 481.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 11:28:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (45.3ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 11:34:39 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 11:35:03 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (133.6ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 190ms (Views: 188.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 11:35:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 11:35:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 11:35:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 11:35:03 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:35:03 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:35:03 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 11:35:03 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 11:35:04 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 11:35:04 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 11:35:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 11:35:04 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 11:35:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 11:47:36 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (199.0ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 281ms (Views: 265.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 11:47:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (54.0ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 115ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 11:48:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 11:51:05 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (175.4ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 236ms (Views: 235.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 11:51:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 11:51:05 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:51:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 11:51:05 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 11:51:06 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 11:51:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 11:51:06 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 11:51:06 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 11:51:06 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 11:51:06 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 11:51:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 11:51:06 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 11:51:06 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:05:50 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (330.8ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 441ms (Views: 439.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:05:51 -0700
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:05:56 -0700
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.1ms)
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:07:26 -0700
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 500 Internal Server Error in 1ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (119.6ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 195ms (Views: 193.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:07:31 -0700
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:07:35 -0700
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant TasksController::Task):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+  [1m[36m (129.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (6.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTasks (20140913191658)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (23.0ms)[0m  [1mCREATE TABLE "tasks" ("id" serial primary key, "desc" character varying(255), "due" timestamp, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140913191658"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM schema_migrations[0m
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:20:35 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 406 Not Acceptable in 20ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (212.0ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 311ms (Views: 309.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:20:39 -0700
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:20:56 -0700
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:21:25 -0700
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:21:29 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (160.8ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 235ms (Views: 233.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:21:30 -0700
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:21:34 -0700
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+  [1m[36mTask Load (0.9ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "tasks"
+  [1m[36m (0.8ms)[0m  [1mSELECT version FROM schema_migrations[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeDatetimeFormatInTasks (20140913193343)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (12.8ms)[0m  [1mALTER TABLE "tasks" ALTER COLUMN "due" TYPE date[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140913193343"]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mTask Load (1.3ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:52:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 406 Not Acceptable in 16ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.6ms)
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:52:56 -0700
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (34.6ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (49.5ms)
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:53:46 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 406 Not Acceptable in 11ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:53:50 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (93.8ms)
+Completed 500 Internal Server Error in 101ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00000103b00578>:0x00000103ea04d0>
+  (in /Users/lisavogtsf/repos/labs/final_weekend_lab/todo_app/app/assets/templates/index.html.erb)):
+    3: <head>
+    4:   <title>TodoApp</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all' %>
+    6:   <%= javascript_include_tag 'application' %>
+    7:   <%= csrf_meta_tags %>
+    8:   <!-- jquery -->
+    9:   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  app/assets/templates/index.html.erb:16:in `block in singleton class'
+  app/assets/templates/index.html.erb:-5:in `instance_eval'
+  app/assets/templates/index.html.erb:-5:in `singleton class'
+  app/assets/templates/index.html.erb:-7:in `__tilt_2179625500'
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4171762435182687127_2189694820'
+  app/controllers/tasks_controller.rb:41:in `render_main_layout_if_format_html'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (202.2ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 258ms (Views: 256.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:54:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (127.3ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 197ms (Views: 195.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:54:17 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (128.5ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 185ms (Views: 184.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:31 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:32 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:54:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (125.8ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 187ms (Views: 185.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:54:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (115.3ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 187ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:54:46 -0700
+
+
+Started GET "/javascript.void(0);" for 127.0.0.1 at 2014-09-13 12:54:50 -0700
+Processing by TasksController#index as 
+  Parameters: {"path"=>"javascript"}
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/tasks_controller.rb:10:in `index'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 12:56:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (179.5ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 262ms (Views: 250.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 12:56:18 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:03:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (440.1ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 560ms (Views: 547.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:03:09 -0700
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:03:13 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:03:13 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:06:50 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (431.2ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 550ms (Views: 539.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:06:51 -0700
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 13:06:52 -0700
+Processing by TasksController#index as JSON
+  [1m[35mTask Load (0.6ms)[0m  SELECT "tasks".* FROM "tasks"
+Completed 200 OK in 11ms (Views: 1.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 13:06:52 -0700
+Processing by TasksController#index as JSON
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:09:39 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (343.8ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 408ms (Views: 406.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:09:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:09:57 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (355.7ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 433ms (Views: 431.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+Processing by TasksController#index as JSON
+  [1m[35mTask Load (0.8ms)[0m  SELECT "tasks".* FROM "tasks"
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 13:09:58 -0700
+Processing by TasksController#index as JSON
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Completed 200 OK in 4ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (171.1ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 235ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:10:53 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:10:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:10:54 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:10:54 -0700
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 13:10:54 -0700
+Processing by TasksController#index as JSON
+  [1m[35mTask Load (0.9ms)[0m  SELECT "tasks".* FROM "tasks"
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 13:10:54 -0700
+Processing by TasksController#index as JSON
+  [1m[36mTask Load (0.6ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Completed 200 OK in 4ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (175.4ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 238ms (Views: 237.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+Processing by TasksController#index as JSON
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+Completed 200 OK in 4ms (Views: 0.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-13 13:11:48 -0700
+Processing by TasksController#index as JSON
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (345.5ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 413ms (Views: 411.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:24 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:12:52 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (314.8ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 423ms (Views: 421.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:12:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:13:04 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (152.2ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 258ms (Views: 256.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:13:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (161.0ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 277ms (Views: 275.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:13:36 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:14:07 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (137.7ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 236ms (Views: 234.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:14:08 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (166.0ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 248ms (Views: 247.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:14:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:14:43 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (130.4ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 192ms (Views: 191.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:14:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (192.7ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 250ms (Views: 249.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:14:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:24:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (419.4ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 541ms (Views: 528.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:24:37 -0700
+  [1m[36mTask Load (0.6ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "tasks"
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:29:26 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (516.1ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 650ms (Views: 639.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:29:27 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:29:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:29:28 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:29:28 -0700
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[35mTask Load (1.0ms)[0m  SELECT "tasks".* FROM "tasks"
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:30:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (382.9ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 512ms (Views: 502.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:30:56 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:30:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:30:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:30:57 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:31:24 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (299.1ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 404ms (Views: 402.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:31:25 -0700
+  [1m[36mTask Load (0.8ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (6.7ms)[0m  [1mINSERT INTO "tasks" ("created_at", "desc", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-13 20:33:15.207673"], ["desc", "testy"], ["updated_at", "2014-09-13 20:33:15.207673"]]
+  [1m[35m (121.1ms)[0m  COMMIT
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[35mTask Load (0.4ms)[0m  SELECT "tasks".* FROM "tasks"
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "tasks"[0m
+  [1m[35mTask Load (0.6ms)[0m  SELECT "tasks".* FROM "tasks"
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-13 13:36:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (412.2ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 541ms (Views: 529.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+
+
+Started POST "/tasks.json" for 127.0.0.1 at 2014-09-13 13:36:46 -0700
+Processing by TasksController#create as JSON
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 2ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.5) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.5) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.5) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/lisavogtsf/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/lisavogtsf/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/lisavogtsf/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/lisavogtsf/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (36.3ms)
