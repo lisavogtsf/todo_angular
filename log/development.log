@@ -7088,3 +7088,239 @@ Can't verify CSRF token authenticity
   [1m[35mSQL (0.5ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = $1  [["id", 12]]
   [1m[36m (8.4ms)[0m  [1mCOMMIT[0m
 Completed 204 No Content in 17ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 11:44:19 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (3.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (182.9ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 315ms (Views: 302.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+Processing by TasksController#index as JSON
+  [1m[35mTask Load (2.2ms)[0m  SELECT "tasks".* FROM "tasks"
+Completed 200 OK in 69ms (Views: 55.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-14 11:44:20 -0700
+Processing by TasksController#index as JSON
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks.json" for 127.0.0.1 at 2014-09-14 11:44:30 -0700
+Processing by TasksController#create as JSON
+  Parameters: {"desc"=>"enjoy weekend", "task"=>{"desc"=>"enjoy weekend"}}
+Can't verify CSRF token authenticity
+  [1m[35m (8.0ms)[0m  BEGIN
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "tasks" ("created_at", "desc", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-14 18:44:30.732215"], ["desc", "enjoy weekend"], ["updated_at", "2014-09-14 18:44:30.732215"]]
+  [1m[35m (125.0ms)[0m  COMMIT
+Completed 201 Created in 155ms (Views: 4.4ms | ActiveRecord: 136.8ms)
+
+
+Started DELETE "/tasks/15.json" for 127.0.0.1 at 2014-09-14 11:44:33 -0700
+Processing by TasksController#destroy as JSON
+  Parameters: {"id"=>"15"}
+Can't verify CSRF token authenticity
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "tasks" WHERE "tasks"."id" = $1[0m  [["id", 15]]
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 204 No Content in 17ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 11:49:03 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (160.4ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 211ms (Views: 210.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+Processing by TasksController#index as JSON
+  [1m[36mTask Load (0.9ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Completed 200 OK in 6ms (Views: 2.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-14 11:49:04 -0700
+Processing by TasksController#index as JSON
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks"
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+Processing by TasksController#index as HTML
+  Rendered layouts/application.html.erb within layouts/application (133.5ms)
+Filter chain halted as :render_main_layout_if_format_html rendered or redirected
+Completed 200 OK in 185ms (Views: 183.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/angular.min.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/bootstrap-3.2.0.min.css?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/angular-route.min.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/angular-rails-templates.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/app.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/index.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/show.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-14 11:49:44 -0700
+
+
+Started GET "/assets/hyperbole.jpeg" for 127.0.0.1 at 2014-09-14 11:49:45 -0700
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-14 11:49:45 -0700
+Processing by TasksController#index as JSON
+  [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tasks.json" for 127.0.0.1 at 2014-09-14 11:49:45 -0700
+Processing by TasksController#index as JSON
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks"
+Completed 200 OK in 4ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/tasks.json" for 127.0.0.1 at 2014-09-14 11:50:10 -0700
+Processing by TasksController#create as JSON
+  Parameters: {"desc"=>"go shopping", "task"=>{"desc"=>"go shopping"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("created_at", "desc", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-14 18:50:10.419898"], ["desc", "go shopping"], ["updated_at", "2014-09-14 18:50:10.419898"]]
+  [1m[36m (8.1ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 13ms (Views: 0.7ms | ActiveRecord: 8.5ms)
+
+
+Started POST "/tasks.json" for 127.0.0.1 at 2014-09-14 11:50:15 -0700
+Processing by TasksController#create as JSON
+  Parameters: {"desc"=>"wash dishes", "task"=>{"desc"=>"wash dishes"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "desc", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-14 18:50:15.819518"], ["desc", "wash dishes"], ["updated_at", "2014-09-14 18:50:15.819518"]]
+  [1m[35m (8.6ms)[0m  COMMIT
+Completed 201 Created in 13ms (Views: 0.8ms | ActiveRecord: 9.0ms)
+
+
+Started POST "/tasks.json" for 127.0.0.1 at 2014-09-14 11:50:32 -0700
+Processing by TasksController#create as JSON
+  Parameters: {"desc"=>"finish snowman", "task"=>{"desc"=>"finish snowman"}}
+Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("created_at", "desc", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2014-09-14 18:50:32.068525"], ["desc", "finish snowman"], ["updated_at", "2014-09-14 18:50:32.068525"]]
+  [1m[36m (8.4ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 13ms (Views: 0.8ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/tasks.json" for 127.0.0.1 at 2014-09-14 11:50:39 -0700
+Processing by TasksController#create as JSON
+  Parameters: {"desc"=>"relax", "task"=>{"desc"=>"relax"}}
+Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "desc", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2014-09-14 18:50:39.466090"], ["desc", "relax"], ["updated_at", "2014-09-14 18:50:39.466090"]]
+  [1m[35m (8.5ms)[0m  COMMIT
+Completed 201 Created in 13ms (Views: 0.8ms | ActiveRecord: 9.0ms)
