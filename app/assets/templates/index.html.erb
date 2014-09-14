@@ -1,29 +1,32 @@
 
-<div ng-controller="TaskCtrl">
-	<h1>Hyperbolic Todo List</h1>
+<div class="col-sm-6">
+	<div ng-controller="TaskCtrl">
+		<h1>Hyperbolic Todo List</h1>
 
-	<!-- I need something to edit a current task -->
-	<!-- need to mark task as comleted vs. delete it -->
+		<!-- I need something to edit a current task -->
+		<!-- need to mark task as comleted vs. delete it -->
 
-	<!-- Enter new task -->
-	<form ng-submit="addTask()">
-		<input type="text" ng-model="newTask.desc" placeholder="Task" autofocus required>
-		<!-- <input type="date" ng-model="task.due" placeholder="Due date"> -->
-		<!-- <button class="btn">Add new task</button> -->
-		<input type="button" value="Add new task">
-	</form>
+		<!-- Enter new task -->
+		<form ng-submit="addTask()">
+			<input type="text" ng-model="newTask.desc" placeholder="Task" autofocus required>
+			<!-- <input type="date" ng-model="task.due" placeholder="Due date"> -->
+			<!-- <button class="btn">Add new task</button> -->
+			<input type="button" value="Add new task">
+		</form>
 
-	<!-- Show all tasks -->
-	<h2>Todo List</h2>
-	<!-- search tasks -->
-	<label for="searchTasks">Search Tasks: </label>
-	<input type="text" ng-model="query" placeholder="Search your tasks">
+		<!-- Show all tasks -->
+		<h2>Todo List</h2>
+		<!-- search tasks -->
+		<label for="searchTasks">Search Tasks: </label>
+		<input type="text" ng-model="query" placeholder="Search your tasks">
 
-	<div ng-repeat="task in tasks | filter: query">
-		<h3>{{task.desc}} <button ng-click="deleteTask(task)">Done!</button></h3>
-	</div>
-
+		<div ng-repeat="task in tasks | filter: query">
+			<h3>{{task.desc}} <button ng-click="deleteTask(task)">Done!</button></h3>
+		</div> <!-- closes task display  -->
+	</div> <!-- closes taskCtrl -->
+</div> <!-- closes left column -->
+<div class="col-sm-6">
 	<div>
-	<%= image_tag "hyperbole.jpeg", alt: "Do all the things!" %>
+		<img src="assets/hyperbole.jpeg" alt="Do all the things!" class="hyperbole">
 	</div><!-- div for image -->
-</div><!-- for TaskCtrl, whole page
+</div> <!-- closes right column -->
