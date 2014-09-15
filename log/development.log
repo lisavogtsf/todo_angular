@@ -13728,3 +13728,67 @@ Started GET "/tasks.json" for 127.0.0.1 at 2014-09-14 23:23:02 -0700
 Processing by TasksController#index as JSON
   [1m[36mTask Load (0.5ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
 Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeCompletedDefaultOnTasks (20140915135324)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36mSQL (5.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20140915135324"]]
+  [1m[35m (117.2ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM schema_migrations[0m
+  [1m[36m (5060.2ms)[0m  [1mDROP DATABASE IF EXISTS "todo_app_development"[0m
+PG::ObjectInUse: ERROR:  database "todo_app_development" is being accessed by other users
+DETAIL:  There are 2 other sessions using the database.
+: DROP DATABASE IF EXISTS "todo_app_development"
+  [1m[35m (318.3ms)[0m  DROP DATABASE IF EXISTS "todo_app_test"
+  [1m[36m (0.5ms)[0m  [1mCREATE DATABASE "todo_app_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "todo_app_development" already exists
+: CREATE DATABASE "todo_app_development" ENCODING = 'unicode'
+  [1m[35m (437.2ms)[0m  CREATE DATABASE "todo_app_test" ENCODING = 'unicode'
+  [1m[36mSQL (3.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (12.6ms)[0m  DROP TABLE "tasks"
+  [1m[36m (22.0ms)[0m  [1mCREATE TABLE "tasks" ("id" serial primary key, "desc" character varying(255), "due" date, "created_at" timestamp, "updated_at" timestamp, "completed" boolean DEFAULT 'f') [0m
+  [1m[35m (0.6ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (5048.8ms)[0m  [1mDROP DATABASE IF EXISTS "todo_app_development"[0m
+PG::ObjectInUse: ERROR:  database "todo_app_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+: DROP DATABASE IF EXISTS "todo_app_development"
+  [1m[35m (115.3ms)[0m  DROP DATABASE IF EXISTS "todo_app_test"
+  [1m[36m (0.4ms)[0m  [1mCREATE DATABASE "todo_app_development" ENCODING = 'unicode'[0m
+PG::DuplicateDatabase: ERROR:  database "todo_app_development" already exists
+: CREATE DATABASE "todo_app_development" ENCODING = 'unicode'
+  [1m[35m (408.5ms)[0m  CREATE DATABASE "todo_app_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.4ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (3.5ms)[0m  DROP TABLE "tasks"
+  [1m[36m (7.7ms)[0m  [1mCREATE TABLE "tasks" ("id" serial primary key, "desc" character varying(255), "due" date, "created_at" timestamp, "updated_at" timestamp, "completed" boolean DEFAULT 'f') [0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (292.4ms)[0m  [1mDROP DATABASE IF EXISTS "todo_app_development"[0m
+  [1m[35m (0.2ms)[0m  DROP DATABASE IF EXISTS "todo_app_test"
+  [1m[36m (407.9ms)[0m  [1mCREATE DATABASE "todo_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (250.1ms)[0m  CREATE DATABASE "todo_app_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (10.8ms)[0m  CREATE TABLE "tasks" ("id" serial primary key, "desc" character varying(255), "due" date, "created_at" timestamp, "updated_at" timestamp, "completed" boolean DEFAULT 'f') 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (2.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.7ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140915135324')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140913191658')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20140913193343')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20140915004225')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveCompletedFromTasks (20140915140141)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (7.9ms)[0m  [1mALTER TABLE "tasks" DROP "completed"[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140915140141"]]
+  [1m[36m (186.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCompletedToTasks (20140915140255)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.1ms)[0m  [1mALTER TABLE "tasks" ADD COLUMN "completed" boolean[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20140915140255"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM schema_migrations[0m

@@ -13,9 +13,11 @@ class TasksController < ApplicationController
   def create
     newTaskDesc = params[:desc]
     newTaskDue = params[:due]
+    newTaskCompleted = false
     @task = Task.new
     @task.desc = newTaskDesc
     @task.due = newTaskDue
+    @task.completed = newTaskCompleted
     @task.save
     respond_with @task
   end
@@ -44,7 +46,7 @@ class TasksController < ApplicationController
   end
 
   def task_params
-    params.require(:task).permit(:title, :author, :description)
+    params.require(:task).permit(:desc, :due, :completed)
   end
 
   def render_main_layout_if_format_html
