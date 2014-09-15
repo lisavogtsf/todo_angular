@@ -3,6 +3,8 @@ todo_angular
 
 A todo list app using angular and rails
 
+Try [Do-All-The-Things](http://do-all-the-things-angular.herokuapp.com/) on Heroku [http://do-all-the-things-angular.herokuapp.com/](http://do-all-the-things-angular.herokuapp.com/)
+
 ## Final Weekend Lab Part 2 - Build a to do app
 
 For this part of the lab, we'd like you to create a To-do app with the following functionality 
