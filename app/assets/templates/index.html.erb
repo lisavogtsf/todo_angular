@@ -21,8 +21,16 @@
 		<input type="text" ng-model="query" placeholder="Search your tasks">
 
 		<div ng-repeat="task in tasks | filter: query | filter: completed = false ">
-			<h4>{{task.desc}} <button ng-click="completedTask(task)">Done!</button>
-			<small><button type="button" class="btn-sm">edit </button><button type="button" ng-click="deleteTask(task)" class="btn-sm">delete </button></small></h4>
+			<h4>{{task.desc}} <button ng-click="completedTask(task)">Done!</button><small>
+				<button type="button" ng-click="startEditTask(task)" class="btn-sm">edit </button>
+				<button type="button" ng-click="deleteTask(task)" class="btn-sm">delete </button>
+			</small></h4>
+
+			<div ng-show="editTask">
+				<input type="text" ng-model="editTask" value="task.desc">
+				<button ng-click="editTask(task)">Save</button>
+				<button ng-click="endTask()">Cancel</button>
+			</div><!-- closes editing div -->
 		</div> <!-- closes task display  -->
 	</div> <!-- closes left column --> 
 

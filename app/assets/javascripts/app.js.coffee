@@ -23,6 +23,7 @@ TodoApp.config ["$routeProvider", "$locationProvider", ($routeProvider, $locatio
 TodoApp.controller "TaskCtrl", ["$scope", "$http", ($scope, $http) ->
 
 	$scope.tasks = []
+	$scope.editTask = false
 
 	# READ/SHOW
 	$scope.getTasks = ->
@@ -48,9 +49,19 @@ TodoApp.controller "TaskCtrl", ["$scope", "$http", ($scope, $http) ->
 			#console.log(task)
 			# console.log(tasks)
 
-
-
 	# UPDATE/EDIT
+	$scope.startEditTask = (task) ->
+		#$scope.editTask = true
+		task.editTask = true
+
+	$scope.endEditTask = ->
+		#$scope.editTask = false
+		task.editTask = false
+
+	$scope.editTask = (task) ->
+		#not sure
+		#$scope.editTask = false
+		task.editTask = false
 
 	#marked
 	$scope.completedTask = (task) ->
