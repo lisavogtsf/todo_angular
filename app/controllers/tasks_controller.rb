@@ -25,7 +25,13 @@ class TasksController < ApplicationController
   end
 
   def update
-    respond_with @task.update(task_params)
+    # respond_with @task.update(task_params)
+    editedTaskDesc = params[:desc]
+    # editedTaskDue = params[:due]
+    # editedTaskCompleted = params[:completed]
+    # id = params[:id]
+    @task.update(:desc => editedTaskDesc)
+    respond_with @task
   end
 
   def destroy

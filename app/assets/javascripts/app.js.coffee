@@ -50,18 +50,10 @@ TodoApp.controller "TaskCtrl", ["$scope", "$http", ($scope, $http) ->
 			# console.log(tasks)
 
 	# UPDATE/EDIT
-	# $scope.startEditTask = (task) ->
-	# 	#$scope.editTask = true
-	# 	task.editTask = true
-
-	# $scope.endEditTask = ->
-	# 	#$scope.editTask = false
-	# 	task.editTask = false
 
 	$scope.editTask = (task) ->
-		#not sure
-		#$scope.editTask = false
-		task.editTask = false
+		this.checked = false
+		$http.put("/tasks/#{this.task.id}.json", task).success (data) ->
 
 	#marked
 	$scope.completedTask = (task) ->

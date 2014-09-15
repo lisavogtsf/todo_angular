@@ -23,12 +23,14 @@
 		<div ng-repeat="task in tasks | filter: query | filter: completed = false ">
 			<h4>{{task.desc}} <button ng-click="completedTask(task)">Done!</button><small>
 				<input type="checkbox" ng-model ="checked" id ="editing{{$index}}"><label for ="editing{{$index}}">edit</label>
-				<input type="checkbox" ng-click="deleteTask(task)"><label>delete</label>
+				<button type="button" ng-click="deleteTask(task)" class="btn-sm">delete </button>
 			</small></h4>
+			<small>{{task.due}}</small>
 
-			<div ng-show="editTask">
-
-			</div><!-- closes editing div -->
+			<form ng-submit = "editTask(task)" ng-show="checked">
+				<input type="text" ng-model="task.desc">
+				<button>save changes</button>
+			</form><!-- closes editing form -->
 		</div> <!-- closes task display  -->
 	</div> <!-- closes left column --> 
 
