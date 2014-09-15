@@ -48,3 +48,7 @@ end
 gem 'angular-rails-templates'
 
 gem 'pry-rails', :group => :development
+
+group :production do
+  gem 'rails_12factor'
+end
