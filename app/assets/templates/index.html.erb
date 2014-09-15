@@ -1,6 +1,6 @@
+<div ng-controller="TaskCtrl">
+	<div class="col-sm-6">
 
-<div class="col-sm-6">
-	<div ng-controller="TaskCtrl">
 		<h1>Hyperbolic Todo List</h1>
 
 		<!-- I need something to edit a current task -->
@@ -20,13 +20,19 @@
 		<label for="searchTasks">Search Tasks: </label>
 		<input type="text" ng-model="query" placeholder="Search your tasks">
 
-		<div ng-repeat="task in tasks | filter: query">
-			<h3>{{task.desc}} <button ng-click="deleteTask(task)">Done!</button></h3>
+		<div ng-repeat="task in tasks | filter: query | filter: completed = false ">
+			<h4>{{task.desc}} <button ng-click="completedTask(task)">Done!</button>
+			<small><button type="button" class="btn-sm">edit </button><button type="button" ng-click="deleteTask(task)" class="btn-sm">delete </button></small></h4>
 		</div> <!-- closes task display  -->
-	</div> <!-- closes taskCtrl -->
-</div> <!-- closes left column -->
-<div class="col-sm-6">
-	<div>
-		<img src="assets/hyperbole.jpeg" alt="Do all the things!" class="hyperbole">
-	</div><!-- div for image -->
-</div> <!-- closes right column -->
+	</div> <!-- closes left column --> 
+
+	<div class="col-sm-6"> <!-- right column, image and completed tasks -->
+		<div>
+			<img src="assets/hyperbole.jpeg" alt="Do all the things!" class="hyperbole">
+		</div><!-- div for image -->
+		<h2>Completed tasks</h2>
+		<div ng-repeat="task in tasks | filter: completed=true" class="completed">
+			<h4><del> {{task.desc}} </del><small><button type="button" ng-click="repeatTask(task)" class="btn-sm">add back </button><button type="button" ng-click="deleteTask(task)" class="btn-sm">delete </button></small></h4>
+		</div>
+	</div> <!-- closes right column -->
+</div><!-- closes taskCtrl -->

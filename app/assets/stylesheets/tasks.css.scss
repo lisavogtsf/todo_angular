@@ -1,6 +1,4 @@
-// Place all the styles related to the tasks controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
 body {
 	color: purple;
 	background-color: #F1FAA5;
@@ -24,4 +22,11 @@ input {
 }
 button {
 	border-radius: 5px;
+}
+.btn-sm {
+	height: 20px;
+	text-align: center;
+	line-height: 10px;
+	background-color: #F1FAA5;
+	color: purple;
 }

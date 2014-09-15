@@ -52,6 +52,14 @@ TodoApp.controller "TaskCtrl", ["$scope", "$http", ($scope, $http) ->
 
 	# UPDATE/EDIT
 
+	#marked
+	$scope.completedTask = (task) ->
+		task.completed = true
+
+	#add back
+	$scope.repeatTask = (task) ->
+		task.completed = false
+
 	# DESTROY/DELETE
 	$scope.deleteTask = (task) ->
 		conf = confirm "are you sure?"
